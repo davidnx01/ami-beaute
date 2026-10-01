@@ -1,0 +1,355 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ami Beauté · nechty, riasy a obočie v Dolnom Kubíne — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Ami Beauté na Hviezdoslavovom námestí v Dolnom Kubíne — manikúra, pedikúra, modeláž nechtov, riasy a obočie.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --desk:#e3e9ee;--sheet:#fcfcfa;--ink:#23272c;--ink-2:#565d66;
+  --navy:#1c3347;--sky:#2f9fd3;--rule:rgba(47,159,211,.22);--hair:rgba(28,51,71,.16);
+  --script:"Marck Script",cursive;--serif:"Old Standard TT",Georgia,serif;
+  --fig:ui-sans-serif,system-ui,"Segoe UI",Roboto,Arial,sans-serif;
+  --air:repeating-linear-gradient(-45deg,var(--sky) 0 16px,transparent 16px 26px,var(--navy) 26px 42px,transparent 42px 52px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--desk);color:var(--ink);font:400 18px/1.65 var(--serif);padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.fig{font-family:var(--fig);font-variant-numeric:tabular-nums}
+.caps{font:700 12px/1.3 var(--serif);letter-spacing:.2em;text-transform:uppercase}
+
+.notice{background:var(--navy);color:#eef3f7;font:400 13.5px/1.45 var(--fig);text-align:center;padding:9px 16px}
+
+header{background:var(--sheet);border-bottom:1px solid var(--hair)}
+.bar{display:flex;align-items:center;gap:26px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:46px;height:46px}
+.brand span{font:400 30px/1 var(--script);color:var(--navy)}
+nav{display:flex;gap:24px;margin-left:auto}
+nav a,.tel{font-size:16px;text-decoration:none;padding:12px 0;background:linear-gradient(var(--sky),var(--sky)) 0 100%/0 1px no-repeat;transition:background-size .2s}
+nav a:hover,.tel:hover{background-size:100% 1px}
+.tel{white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;text-decoration:none;font:600 15px/1 var(--fig);letter-spacing:.02em;border-radius:3px;white-space:nowrap;transition:background-color .2s,color .2s}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:#264763}
+.btn-out{border:1.5px solid var(--navy);color:var(--navy)}
+.btn-out:hover{background:var(--navy);color:#fff}
+
+/* známka s perforáciou */
+.stamp{position:relative;background:#fff;padding:11px}
+.stamp::after{content:"";position:absolute;inset:-6px;pointer-events:none;
+  background:
+   radial-gradient(circle,var(--bg,var(--desk)) 4.6px,transparent 5.2px) 0 0/14px 12px repeat-x,
+   radial-gradient(circle,var(--bg,var(--desk)) 4.6px,transparent 5.2px) 0 100%/14px 12px repeat-x,
+   radial-gradient(circle,var(--bg,var(--desk)) 4.6px,transparent 5.2px) 0 0/12px 14px repeat-y,
+   radial-gradient(circle,var(--bg,var(--desk)) 4.6px,transparent 5.2px) 100% 0/12px 14px repeat-y}
+.stamp .ph{overflow:hidden}
+.stamp img{transition:transform .5s ease}
+.stamp:hover img{transform:scale(1.045)}
+
+/* obálka */
+.hero{padding:clamp(34px,5vw,64px) 0 clamp(40px,6vw,72px)}
+.envelope{background:var(--air);padding:12px;box-shadow:0 26px 50px -30px rgba(28,51,71,.55)}
+.env-in{background:var(--sheet);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,56px);padding:clamp(26px,4.5vw,56px);position:relative}
+.avion{display:inline-flex;flex-direction:column;border:2px solid var(--sky);color:var(--sky);padding:6px 12px;line-height:1.15}
+.avion b{font:700 15px/1.2 var(--serif);letter-spacing:.16em;text-transform:uppercase}
+.avion i{font-size:13px}
+.from{margin:22px 0 0;color:var(--ink-2);font-size:15px}
+h1{font:400 clamp(64px,9vw,120px)/.95 var(--script);color:var(--navy);margin:clamp(30px,5vw,56px) 0 6px;letter-spacing:-.01em}
+.to{border-top:1px solid var(--hair);margin-top:18px;max-width:520px}
+.to p{border-bottom:1px solid var(--hair);padding:9px 0;font-size:19px}
+.to .hand{font:400 27px/1.2 var(--script);color:var(--navy)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.post{position:relative;align-self:start;justify-self:end;width:100%;max-width:340px;--bg:var(--sheet)}
+.post .stamp{transform:rotate(2deg)}
+.post .val{display:flex;justify-content:space-between;align-items:baseline;padding:10px 4px 0;color:var(--navy)}
+.post .val span{font:400 24px/1 var(--script)}
+.post .val small{font:700 11px/1 var(--serif);letter-spacing:.18em;text-transform:uppercase}
+.mark{position:absolute;left:-132px;top:-26px;width:176px;color:var(--navy);opacity:.88;transform:rotate(-12deg);pointer-events:none;z-index:2}
+.mark text{font-family:var(--serif)}
+
+/* list */
+.letter{padding:0 0 clamp(48px,7vw,84px)}
+.sheet{--lh:38px;background:var(--sheet);max-width:860px;margin:0 auto;padding:76px clamp(22px,6vw,80px) 76px;font-size:19px;line-height:var(--lh);
+  background-image:linear-gradient(transparent 0 calc(var(--lh) - 1px),var(--rule) calc(var(--lh) - 1px) var(--lh));background-size:100% var(--lh);background-position:0 68px;
+  box-shadow:0 1px 2px rgba(0,0,0,.08),0 22px 40px -28px rgba(28,51,71,.45)}
+.sheet>*{line-height:var(--lh);margin:0}
+.sheet .date{text-align:right;font:400 27px/var(--lh) var(--script);color:var(--navy)}
+.sheet .hi{font:400 38px/var(--lh) var(--script);color:var(--navy);margin-top:var(--lh)}
+.sheet p+p{margin-top:var(--lh)}
+.sheet .date+.hi{margin-top:var(--lh)}
+.sheet q{quotes:"„" "“";font-style:italic}
+.sheet .src{font-size:15px;color:var(--ink-2)}
+.sheet a.fig{white-space:nowrap}
+.sheet .sign{font:400 34px/var(--lh) var(--script);color:var(--navy)}
+.sheet .ps{font-size:17px;color:var(--ink-2)}
+.sheet .ps b{font:400 26px/1 var(--script);color:var(--navy);margin-right:6px}
+
+/* príloha — cenník */
+.enclosure{padding:0 0 clamp(56px,8vw,96px)}
+.slip{background:var(--navy);color:#eef3f7;position:relative;padding:clamp(30px,5vw,60px)}
+.slip::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--air);background-color:#fff}
+.slip-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+.slip h2{font:400 clamp(44px,5.4vw,64px)/1 var(--script);color:#fff}
+.slip .caps{color:#9fd2ec}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,48px)}
+.grp+.grp{margin-top:30px}
+.grp h3{font:700 13px/1.3 var(--serif);letter-spacing:.2em;text-transform:uppercase;color:#9fd2ec;padding-bottom:10px;border-bottom:1px solid rgba(238,243,247,.3)}
+.grp ul{list-style:none}
+.grp li{display:grid;grid-template-columns:1fr auto;gap:2px 14px;padding:11px 0;border-bottom:1px solid rgba(238,243,247,.13)}
+.grp li span{font-size:16.5px;line-height:1.35}
+.grp li b{font:600 16px/1.35 var(--fig);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.grp li small{grid-column:1/-1;font:400 13px/1.3 var(--fig);font-variant-numeric:tabular-nums;color:rgba(238,243,247,.66)}
+.slip .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:36px;padding-top:24px;border-top:1px solid rgba(238,243,247,.3)}
+.slip .foot p{font-size:15.5px;color:rgba(238,243,247,.85);max-width:40em}
+.slip .btn{background:#fff;color:var(--navy)}
+.slip .btn:hover{background:#d8ecf6}
+
+/* známky */
+.stamps{padding:0 0 clamp(56px,8vw,96px)}
+.sec-h{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:36px}
+.sec-h h2{font:400 clamp(42px,5vw,58px)/1 var(--script);color:var(--navy)}
+.sec-h p{color:var(--ink-2);font-size:16px}
+.album{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:clamp(22px,3vw,38px) clamp(18px,2.6vw,32px);align-items:start}
+.album figure:first-child{grid-row:span 2}
+.album figcaption{font:400 22px/1.2 var(--script);color:var(--navy);margin-top:14px;text-align:center}
+.album figcaption q{quotes:"„" "“"}
+.album .stamp{max-width:300px;margin:0 auto}
+.album figure:first-child .stamp{max-width:440px}
+.album figure:nth-child(odd) .stamp{transform:rotate(-1.2deg)}
+.album figure:nth-child(even) .stamp{transform:rotate(1deg)}
+
+/* adresa */
+.address{padding:0 0 clamp(64px,8vw,104px)}
+.label{background:var(--air);padding:10px}
+.label-in{background:var(--sheet);padding:clamp(28px,4.5vw,52px);display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:clamp(22px,4vw,48px)}
+.label h2{font:400 clamp(40px,4.6vw,54px)/1 var(--script);color:var(--navy);grid-column:1/-1}
+.label .caps{color:var(--sky);display:block;margin-bottom:8px}
+.label p{font-size:18px;line-height:1.55}
+.label .big{font:400 30px/1.2 var(--script);color:var(--navy)}
+.label small{display:block;font-size:14.5px;color:var(--ink-2);line-height:1.5;margin-top:6px}
+.label a{text-decoration:none;background:linear-gradient(var(--sky),var(--sky)) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.label a:hover{background-size:100% 1px}
+.links{list-style:none;border-top:1px solid var(--hair)}
+.links a{display:flex;justify-content:space-between;align-items:center;min-height:46px;border-bottom:1px solid var(--hair);background:none}
+.links a:hover{color:var(--sky)}
+
+footer{border-top:1px solid var(--hair);background:var(--sheet);padding:26px 0;font:400 14px/1.5 var(--fig);color:var(--ink-2)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;grid-template-columns:1fr 1fr;gap:8px;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(252,252,250,.97);border-top:1px solid var(--hair)}
+.mbar .btn{min-height:50px;padding:0 10px}
+
+@media (max-width:960px){
+  nav{display:none}
+  .env-in{grid-template-columns:1fr}
+  .post{justify-self:center;max-width:300px;margin-top:10px}
+  .cols{grid-template-columns:1fr 1fr}
+  .album{grid-template-columns:1fr 1fr}
+  .album figure:first-child{grid-column:1/-1;grid-row:auto}
+  .label-in{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .bar{min-height:64px}
+  .bar .tel,.bar .btn{display:none}
+  .brand span{font-size:27px}
+  h1{margin-top:26px}
+  .mark{left:auto;right:-22px;top:-34px;width:118px}
+  .post .val small{display:none}
+  .cols{grid-template-columns:1fr}
+  .grp+.grp,.cols>div+div{margin-top:8px}
+  .album{gap:26px 18px}
+  .album figcaption{font-size:19px}
+  .label-in{grid-template-columns:1fr}
+  .mbar{display:grid}
+  .sheet{font-size:17.5px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="assets/ami-beaute-logo.webp" width="220" height="220" alt="Logo Ami Beauté — monogram AB"><span>Ami Beauté</span></a>
+    <nav aria-label="Hlavná navigácia">
+      <a href="#cennik">Cenník</a>
+      <a href="#fotky">Fotky</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel fig" href="tel:+421948914355">0948 914 355</a>
+    <a class="btn btn-navy" href="https://www.notino.sk/salony/ami-beaute_1/" rel="noopener">Rezervovať</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="envelope">
+      <div class="env-in">
+        <div>
+          <span class="avion"><b>Letecky</b><i>Par avion</i></span>
+          <p class="from">Odosielateľ: nechtový a riasový salón · Nails &amp; Eyelashes</p>
+          <h1 id="h1">Ami Beauté</h1>
+          <div class="to">
+            <p class="hand">manikúra, pedikúra, modeláž nechtov,</p>
+            <p class="hand">predlžovanie mihalníc, lash lifting a obočie</p>
+            <p>Hviezdoslavovo námestie 1671/44 · <span class="fig">026 01</span> Dolný Kubín</p>
+          </div>
+          <div class="ctas">
+            <a class="btn btn-navy" href="tel:+421948914355">Zavolať <span class="fig">&nbsp;0948 914 355</span></a>
+            <a class="btn btn-out" href="https://www.notino.sk/salony/ami-beaute_1/" rel="noopener">Rezervovať na Notino</a>
+          </div>
+        </div>
+        <div class="post">
+          <div class="stamp"><div class="ph"><img src="assets/salon-stena-logo.webp" width="640" height="853" alt="Interiér salónu: logo Ami Beauté na stene, modrá pohovka a váza so suchou trávou" fetchpriority="high"></div>
+            <div class="val"><small>Nails &amp; Eyelashes</small><span>Dolný Kubín</span></div></div>
+          <svg class="mark" viewBox="0 0 200 200" aria-label="Poštová pečiatka: hodnotenie 4,8 z 5 na Notino, 42 hodnotení" role="img">
+            <defs><path id="ring" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs>
+            <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="100" cy="100" r="54" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <text font-size="15" letter-spacing="3.2" fill="currentColor"><textPath href="#ring">NOTINO · HODNOTENIE · DOLNÝ KUBÍN ·</textPath></text>
+            <text x="100" y="104" text-anchor="middle" font-size="34" font-weight="700" fill="currentColor" style="font-family:ui-sans-serif,system-ui,sans-serif">4,8</text>
+            <text x="100" y="127" text-anchor="middle" font-size="11" fill="currentColor">★ 42 hodnotení</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="letter" aria-label="Predstavenie salónu">
+  <div class="wrap">
+    <article class="sheet">
+      <p class="date">Dolný Kubín</p>
+      <p class="hi">Ahoj,</p>
+      <p>na Hviezdoslavovom námestí v Dolnom Kubíne nájdeš Ami Beauté — salón na nechty, riasy a obočie. Robí sa tu manikúra aj pedikúra, modeláž gélových a akrylových nechtov, predlžovanie mihalníc, lash lifting a laminácia obočia.</p>
+      <p>Na Notino sa salón opisuje ako miesto, <q>v ktorom si môžete dopriať chvíľu len pre seba</q>. <span class="src">(profil na Notino, 1.&nbsp;10.&nbsp;2026)</span></p>
+      <p>Termín si rezervuješ online cez Notino alebo jednoducho zavoláš na <a class="fig" href="tel:+421948914355">0948 914 355</a>.</p>
+      <p class="sign">Ami Beauté</p>
+      <p class="ps"><b>P. S.</b> Cenník prikladám nižšie a pár známok z nechtov tiež.</p>
+    </article>
+  </div>
+</section>
+
+<section class="enclosure" id="cennik" aria-labelledby="h-cennik">
+  <div class="wrap">
+    <div class="slip">
+      <div class="slip-head">
+        <h2 id="h-cennik">Príloha: cenník</h2>
+        <span class="caps">24 služieb · cena a trvanie</span>
+      </div>
+      <div class="cols">
+        <div>
+          <div class="grp"><h3>Manikúra</h3><ul>
+            <li><span>Manikúra + gél lak</span><b>20 €</b><small>40 min – 1 h</small></li>
+            <li><span>Manikúra bez lakovania</span><b>12 €</b><small>30 min</small></li>
+            <li><span>Pánska manikúra Basic</span><b>12 €</b><small>30 – 40 min</small></li>
+            <li><span>Odstránenie gél laku</span><b>7 €</b><small>15 min</small></li>
+            <li><span>Oprava nechtu</span><b>2 – 4 €</b><small>10 – 30 min</small></li>
+          </ul></div>
+          <div class="grp"><h3>Modeláž nechtov</h3><ul>
+            <li><span>Nové nechty gélové</span><b>25 – 29 €</b><small>1 h 30 min – 2 h</small></li>
+            <li><span>Nové nechty akrylové</span><b>25 – 29 €</b><small>1 h 30 min – 2 h</small></li>
+            <li><span>Dorábka predĺžených nechtov</span><b>23 – 27 €</b><small>1 h 30 min – 2 h</small></li>
+            <li><span>Odstránenie umelých nechtov</span><b>10 €</b><small>30 min</small></li>
+          </ul></div>
+        </div>
+        <div>
+          <div class="grp"><h3>Dámska pedikúra</h3><ul>
+            <li><span>Pedikúra + gél lak</span><b>28 €</b><small>1 h – 1 h 30 min</small></li>
+            <li><span>Pedikúra + gél lak s masážou nôh (10 min)</span><b>36 €</b><small>1 h 10 min – 1 h 40 min</small></li>
+            <li><span>Pedikúra bez lakovania</span><b>20 €</b><small>30 min – 1 h</small></li>
+            <li><span>Pedikúra bez lakovania + masáž nôh (10 min)</span><b>28 €</b><small>50 min – 1 h 10 min</small></li>
+            <li><span>Iba lakovanie nechtov na nohách</span><b>16 €</b><small>40 min</small></li>
+            <li><span>Odstránenie gél laku na nohách</span><b>6 €</b><small>15 min</small></li>
+          </ul></div>
+          <div class="grp"><h3>Pánska pedikúra</h3><ul>
+            <li><span>Pánska pedikúra</span><b>25 €</b><small>40 min – 1 h 10 min</small></li>
+          </ul></div>
+        </div>
+        <div>
+          <div class="grp"><h3>Predlžovanie rias</h3><ul>
+            <li><span>Nový set mihalníc</span><b>30 – 35 €</b><small>1 h 30 min – 2 h 30 min</small></li>
+            <li><span>Doplnenie mihalníc</span><b>25 – 30 €</b><small>1 h 10 min – 1 h 40 min</small></li>
+            <li><span>Nový set – spodné riasy</span><b>7 €</b><small>20 min</small></li>
+            <li><span>Odstránenie rias</span><b>5 €</b><small>15 min</small></li>
+          </ul></div>
+          <div class="grp"><h3>Riasy a obočie</h3><ul>
+            <li><span>Lash lifting (trvalá na riasy)</span><b>22 €</b><small>40 min</small></li>
+            <li><span>Lash lifting + farbenie mihalníc</span><b>28 €</b><small>1 h</small></li>
+            <li><span>Laminácia obočia</span><b>22 €</b><small>30 – 40 min</small></li>
+            <li><span>Laminácia obočia + farbenie</span><b>28 €</b><small>1 h</small></li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="foot">
+        <p>Ceny podľa profilu na Notino (1.&nbsp;10.&nbsp;2026), overiť. Rozpätie ceny a trvania je tak, ako ho uvádza salón.</p>
+        <a class="btn" href="https://www.notino.sk/salony/ami-beaute_1/" rel="noopener">Vybrať termín na Notino</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stamps" id="fotky" aria-labelledby="h-fotky">
+  <div class="wrap">
+    <div class="sec-h"><h2 id="h-fotky">Známky z nechtov</h2><p>Fotky z facebookovej stránky salónu.</p></div>
+    <div class="album">
+      <figure><div class="stamp"><div class="ph"><img src="assets/baby-blue-french.webp" width="820" height="820" loading="lazy" alt="Mandľové nechty s bledomodrou francúzskou špičkou na svetlej omietke"></div></div><figcaption><q>Baby blue dreams</q></figcaption></figure>
+      <figure><div class="stamp"><div class="ph"><img src="assets/nechty-bodky.webp" width="315" height="315" loading="lazy" alt="Francúzska manikúra s tmavomodrými špičkami a bielymi bodkami"></div></div><figcaption>bodky a modrá</figcaption></figure>
+      <figure><div class="stamp"><div class="ph"><img src="assets/nechty-ruzove-kvet.webp" width="315" height="315" loading="lazy" alt="Ružové nechty s kvetom a bodkovanou špičkou"></div></div><figcaption>ružový kvet</figcaption></figure>
+      <figure><div class="stamp"><div class="ph"><img src="assets/nechty-kvety-modre.webp" width="315" height="315" loading="lazy" alt="Hranaté nechty s tyrkysovou špičkou a fialovými kvetmi"></div></div><figcaption>kvety na hranatých</figcaption></figure>
+      <figure><div class="stamp"><div class="ph"><img src="assets/nechty-pastel.webp" width="315" height="315" loading="lazy" alt="Krátke nechty v pastelových farbách, v pozadí suchá tráva"></div></div><figcaption>pastely</figcaption></figure>
+      <figure><div class="stamp"><div class="ph"><img src="assets/pedikura-french.webp" width="315" height="315" loading="lazy" alt="Pedikúra s bielou francúzskou špičkou"></div></div><figcaption>pedikúra french</figcaption></figure>
+      <figure><div class="stamp"><div class="ph"><img src="assets/pedikura-bordova.webp" width="315" height="315" loading="lazy" alt="Pedikúra v bordovej trblietavej farbe"></div></div><figcaption>pedikúra v bordovej</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="address" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap">
+    <div class="label"><div class="label-in">
+      <h2 id="h-kontakt">Adresa na obálku</h2>
+      <div>
+        <span class="caps">Adresa</span>
+        <p class="big">Hviezdoslavovo námestie 1671/44</p>
+        <p><span class="fig">026 01</span> Dolný Kubín</p>
+        <small><a href="https://www.google.com/maps/search/Ami+Beauté+Dolný+Kubín" rel="noopener">Otvoriť v Google Maps →</a></small>
+      </div>
+      <div>
+        <span class="caps">Telefón a e-mail</span>
+        <p class="big fig"><a href="tel:+421948914355">0948 914 355</a></p>
+        <p><a href="mailto:amibeaute25@gmail.com">amibeaute25@gmail.com</a></p>
+        <small>Otváracie hodiny: podľa voľných termínov v rezervácii na Notino — týždenný rozpis overiť.</small>
+      </div>
+      <div>
+        <span class="caps">Online</span>
+        <ul class="links">
+          <li><a href="https://www.notino.sk/salony/ami-beaute_1/" rel="noopener">Rezervácia na Notino <span aria-hidden="true">→</span></a></li>
+          <li><a href="https://www.instagram.com/_ami.beaute" rel="noopener">Instagram <span aria-hidden="true">→</span></a></li>
+          <li><a href="https://facebook.com/share/1GpzsF6mZU/" rel="noopener">Facebook <span aria-hidden="true">→</span></a></li>
+        </ul>
+        <small class="fig">Notino: 4,8 / 5 z 42 hodnotení (1. 10. 2026)</small>
+      </div>
+    </div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Fotky: facebooková stránka Ami Beauté · cenník: Notino</span></div>
+</footer>
+
+<div class="mbar" aria-label="Rýchle akcie">
+  <a class="btn btn-navy" href="tel:+421948914355">Zavolať</a>
+  <a class="btn btn-out" href="https://www.notino.sk/salony/ami-beaute_1/" rel="noopener">Notino</a>
+</div>
+</html>
